@@ -1,0 +1,29 @@
+span {
+  color: white;
+  margin: 5px;
+}
+
+span a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(31, 29, 29);
+  font-family: 'Tajawal', sans-serif;
+}
+
+@media (max-width: 767px) {
+  span {
+    color: white;
+    margin: 20px 8px;
+  }
+
+  .main-footer {
+    margin-top: 10px;
+  }
+}

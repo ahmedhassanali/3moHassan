@@ -1,0 +1,41 @@
+#slider {
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../assets/Header/vegetables-set-left-black-slate.jpg");
+  border-radius: 30px;  
+}
+
+.en-class {
+  font-family: "Abril Fatface", cursive;
+}
+.ar-class {
+  font-family: "Lalezar", cursive;
+}
+
+#slider h1 {
+  text-align: center;
+  margin: 250px 50px;
+  color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 767px) {
+  .header-content {
+    text-align: center;
+    width: 80%;
+  }
+  .header-content img {
+    height: 180px;
+  }
+
+  #slider {
+    width: 100%;
+    background-color: aliceblue;
+
+  }
+
+
+}
