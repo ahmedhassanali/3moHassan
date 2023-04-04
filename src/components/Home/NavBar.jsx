@@ -29,7 +29,7 @@ function NavBar() {
 
             </div>
             <div className="btns col-9">
-              <a className="link" href="/menu-site">{t('categories')}</a>
+              <a className="link" href="/3moHassan">{t('categories')}</a>
               <Link className="link" to="contact-us" spy={true} smooth={true} offset={-70} duration={500} >{t('contact-us')}</Link>
             </div>
           </Nav>

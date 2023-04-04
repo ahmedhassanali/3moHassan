@@ -14,7 +14,7 @@ function App() {
         <NavBar />
          <Routes>
           <Route path="/" element={<CategorySection />} />
-          <Route path="/menu-site/category/:categoryId" element={<Products />} />
+          <Route path="/3moHassan/category/:categoryId" element={<Products />} />
           <Route path="*" element={<CategorySection />} />
         </Routes> 
         <ContactUs />
