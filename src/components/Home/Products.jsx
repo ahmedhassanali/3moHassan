@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { fetchProducts } from "../../rtk/slices/ProductsSlice";
 import ProductCard from "../components/ProductCard";
-import "./Products.css";
+import "./CardsSection.css";
 
 const Products = () => {
   const productsData = useSelector((state) => state.products);

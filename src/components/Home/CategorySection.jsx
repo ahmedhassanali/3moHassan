@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCategories } from "../../rtk/slices/CategoriesSlice";
 import CategoryCard from "../components/CategoryCard";
-import "./CategorySection.css";
+import "./CardsSection.css";
 import Header from "./Header";
 
 const CategorySection = () => {
@@ -34,18 +34,20 @@ const CategorySection = () => {
   });
 
   return (
-    <div className="menu">
+    <>
       <Header />
+    <div className="menu">
       {categories.map((item) => (
         <CategoryCard
-          key={item.id}
-          name={item.name}
-          description={item.description}
-          image={item.image}
-          id={item.id}
+        key={item.id}
+        name={item.name}
+        description={item.description}
+        image={item.image}
+        id={item.id}
         />
-      ))}
+        ))}
     </div>
+    </>
   );
 };
 

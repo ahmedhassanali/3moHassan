@@ -7,10 +7,8 @@ import { Link } from "react-router-dom";
 export default function ContactUs() {
   const { t, i18n } = useTranslation();
   return (
-    <>
       <section className="contact-us row" id="contact-us">
         <img className="col-md-4 image" src={image} alt="" />
-
         <div className="col-md-5 content">
           <div className="col-md-12">
             <div className={i18n.language === "ar" ? "ar-class" : "en-class"}>
@@ -53,6 +51,5 @@ export default function ContactUs() {
 
         <img className="col-md-3 logo" src={logo} alt="" />
       </section>
-    </>
   );
 }
