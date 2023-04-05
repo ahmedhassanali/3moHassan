@@ -12,7 +12,7 @@ const CategoryCard = (props) => {
       <div className={i18n.language === "ar" ? "ar-class" : "en-class"}>
         <h3>{props.name}</h3>
         <p>{props.description}</p>
-        <Link className="btn btn-danger " to={`/menu-site/category/${props.id}`}>
+        <Link className="btn btn-danger " to={`/3moHassan/category/${props.id}`}>
           {t('open')}
         </Link>
       </div>
