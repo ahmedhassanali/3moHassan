@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/3moHassan/static/css/main.27548a1f.css",
+    "main.css": "/3moHassan/static/css/main.48b44b89.css",
     "main.js": "/3moHassan/static/js/main.13900363.js",
     "static/js/787.57a5ee01.chunk.js": "/3moHassan/static/js/787.57a5ee01.chunk.js",
     "static/media/anna-pelzer-IGfIGP5ONV0-unsplash.jpg": "/3moHassan/static/media/anna-pelzer-IGfIGP5ONV0-unsplash.533ef8d8e67467c3aebf.jpg",
@@ -287,12 +287,12 @@
     "static/media/de.svg": "/3moHassan/static/media/de.6435bf24d148ca7248e7.svg",
     "static/media/bd.svg": "/3moHassan/static/media/bd.0ad8c443ef4d47ea0497.svg",
     "static/media/id.svg": "/3moHassan/static/media/id.f624e2c8444a7794b357.svg",
-    "main.27548a1f.css.map": "/3moHassan/static/css/main.27548a1f.css.map",
+    "main.48b44b89.css.map": "/3moHassan/static/css/main.48b44b89.css.map",
     "main.13900363.js.map": "/3moHassan/static/js/main.13900363.js.map",
     "787.57a5ee01.chunk.js.map": "/3moHassan/static/js/787.57a5ee01.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27548a1f.css",
+    "static/css/main.48b44b89.css",
     "static/js/main.13900363.js"
   ]
 }
