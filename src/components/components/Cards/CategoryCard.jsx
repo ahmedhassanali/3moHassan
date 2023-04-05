@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import "./Card.css";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 const CategoryCard = (props) => {
   const { t, i18n } = useTranslation();

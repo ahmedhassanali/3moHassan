@@ -2,9 +2,12 @@ import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { fetchProducts } from "../../rtk/slices/ProductsSlice";
-import ProductCard from "../components/ProductCard";
 import "./CardsSection.css";
+import { fetchProducts } from "../../rtk/slices/ProductsSlice";
+import ProductCard from "../components/Cards/ProductCard";
+import NavBar from "../components/NavBar/NavBar";
+import ContactUs from "../components/ContactUs/ContactUs";
+import Footer from "../components/Footer/Footer";
 
 const Products = () => {
   const productsData = useSelector((state) => state.products);
@@ -40,23 +43,28 @@ const Products = () => {
 
   const productId = params.productId;
   return (
-    <div className="menu">
-      {products.map(
-        (item) =>
-          productId === item.productId && (
-            <>
-              <ProductCard
-                key={item.id}
-                name={item.name}
-                description={item.description}
-                prices={item.prices}
-                image={item.image}
-                productId={item.productId}
-              />
-            </>
-          )
-      )}
-    </div>
+    <>
+      <NavBar />
+      <div className="menu">
+        {products.map(
+          (item) =>
+            productId === item.productId && (
+              <>
+                <ProductCard
+                  key={item.id}
+                  name={item.name}
+                  description={item.description}
+                  prices={item.prices}
+                  image={item.image}
+                  productId={item.productId}
+                />
+              </>
+            )
+        )}
+      </div>
+      <ContactUs />
+      <Footer />
+    </>
   );
 };
 

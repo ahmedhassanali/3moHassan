@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import logo from "../../assets/NavBar/logo.png";
-import image from "../../assets/OrderNow/motorbike.png";
+import logo from "../../../assets/NavBar/logo.png";
+import image from "../../../assets/OrderNow/motorbike.png";
 import "./ContactUs.css";
 import { Link } from "react-router-dom";
 export default function ContactUs() {

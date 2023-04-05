@@ -1,12 +1,15 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCategories } from "../../rtk/slices/CategoriesSlice";
-import CategoryCard from "../components/CategoryCard";
 import "./CardsSection.css";
-import Header from "./Header";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { fetchCategories } from "../../rtk/slices/CategoriesSlice";
+import CategoryCard from "../components/Cards/CategoryCard";
+import Header from "../components/Header/Header";
+import NavBar from "../components/NavBar/NavBar";
+import ContactUs from "../components/ContactUs/ContactUs";
+import Footer from "../components/Footer/Footer";
 
 const CategorySection = () => {
   const { i18n } = useTranslation();
@@ -38,18 +41,21 @@ const CategorySection = () => {
 
   return (
     <>
+      <NavBar />
       <Header />
-    <div   className="menu">
-      {categories.map((item) => (
-        <CategoryCard
-        key={item.id}
-        name={item.name}
-        description={item.description}
-        image={item.image}
-        id={item.id}
-        />
+      <div className="menu">
+        {categories.map((item) => (
+          <CategoryCard
+            key={item.id}
+            name={item.name}
+            description={item.description}
+            image={item.image}
+            id={item.id}
+          />
         ))}
-    </div>
+      </div>
+      <ContactUs />
+      <Footer />
     </>
   );
 };
