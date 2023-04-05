@@ -13,7 +13,7 @@ const CategorySection = () => {
 
   useEffect(() => {
     dispatch(fetchCategories());
-  }, );
+  });
 
   const categories = categoriesData.map((category) => {
     if (i18n.language === "ar") {
