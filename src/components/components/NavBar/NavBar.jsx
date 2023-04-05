@@ -18,13 +18,13 @@ function NavBar() {
               {i18n.language === 'en-US' ?
               ( 
                <button className="btn btn-danger" onClick={()=>{
-                i18n.changeLanguage('ar');}}>AR<i class="fi fi-eg mx-1"></i></button>
+                i18n.changeLanguage('ar');}}>عربي<i class="fi fi-eg mx-1"></i></button>
               )
               :
               (
               <button className="btn btn-danger" onClick={()=>{
                 i18n.changeLanguage('en-US');
-              }}>EN<i class="fi fi-us mx-1"></i></button>
+              }}>English<i class="fi fi-us mx-1"></i></button>
               )}
 
             </div>
