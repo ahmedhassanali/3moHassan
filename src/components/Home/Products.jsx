@@ -24,7 +24,7 @@ const Products = () => {
         {
           'id':product.id,
           'name':product.name.ar,
-          'description':product.description.ar,
+          'description': product.description.ar,
           'image':product.image,
           'prices':product.prices,
           'productId':product.productId
