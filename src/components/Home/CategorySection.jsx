@@ -5,6 +5,8 @@ import { fetchCategories } from "../../rtk/slices/CategoriesSlice";
 import CategoryCard from "../components/CategoryCard";
 import "./CardsSection.css";
 import Header from "./Header";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const CategorySection = () => {
   const { i18n } = useTranslation();
@@ -13,6 +15,7 @@ const CategorySection = () => {
 
   useEffect(() => {
     dispatch(fetchCategories());
+    AOS.init();
   });
 
   const categories = categoriesData.map((category) => {
@@ -36,7 +39,7 @@ const CategorySection = () => {
   return (
     <>
       <Header />
-    <div className="menu">
+    <div   className="menu">
       {categories.map((item) => (
         <CategoryCard
         key={item.id}

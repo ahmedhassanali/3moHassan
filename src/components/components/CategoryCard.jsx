@@ -7,15 +7,11 @@ import { motion } from "framer-motion";
 const CategoryCard = (props) => {
   const { t, i18n } = useTranslation();
   return (
-    <motion.div
+    <div
       className="card bg-dark text-white"
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{
-        duration: 0.8,
-        delay: 0.5,
-        ease: [0, 0.71, 0.2, 1.01],
-      }}
+      data-aos="fade-up"       
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="600"
     >
       <img src={props.image} alt={props.name} />
       <div className={i18n.language === "ar" ? "ar-class" : "en-class"}>
@@ -28,7 +24,7 @@ const CategoryCard = (props) => {
           {t("open")}
         </Link>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
