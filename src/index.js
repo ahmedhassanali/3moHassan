@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import '../node_modules/font-awesome/css/font-awesome.min.css';
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import {store} from '../src/rtk/Store'
 import './i18n';

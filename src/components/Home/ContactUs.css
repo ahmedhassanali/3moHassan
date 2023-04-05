@@ -1,70 +1,62 @@
-
-
-.contact-us{
-    margin:auto;
-    background-color: rgb(31, 29, 29);
-    text-align: center;    
-
-    border-radius: 30px;
+.contact-us {
+  margin: auto;
+  background-color: rgb(31, 29, 29);
+  text-align: center;
+  border-radius: 30px;
+  padding: 50px;
 }
-.contact-us .logo{
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    width: 250px;
-    height: 100%;
+.contact-us .logo {
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  width: 250px;
+  height: 100%;
 }
-
-.contact-us .image{
-    margin:auto;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    width: 200px;
-    height: 100%;
+.contact-us .image {
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  width: 200px;
+  height: 100%;
 }
 
-.contact-us .content{
-    text-align: center;
-    margin: auto;
-    color: rgb(255, 255, 255);
-} 
-
-.contact-us h1{
-    color: black;
-    font-weight: bold;
+.contact-us .content {
+  text-align: center;
+  margin: auto;
+  color: rgb(255, 255, 255);
 }
 
-
-.contact-us h2{
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+.contact-us h1 {
+  color: black;
+  font-weight: bold;
 }
 
-.contact-us a{
-    width: 100%;
-    margin:10px 0px;
+.contact-us h2 {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
-.contact-us a h5{
-    color: white;
+.contact-us a {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.contact-us a h5 {
+  color: white;
 }
 
 .en-class {
-    font-family: "Abril Fatface", cursive;
-  }
-  .ar-class {
-    font-family: "Lalezar", cursive;
-  }
-
-  @media (max-width: 767px) {
-
-    .contact-us{
-        margin:auto;
-        background-color: rgb(31, 29, 29);
-        text-align: center; 
-        /* width: 100%;       */
-    }
+  font-family: "Abril Fatface", cursive;
+}
+.ar-class {
+  font-family: "Lalezar", cursive;
 }
 
-  
-  
+@media (max-width: 767px) {
+  .contact-us {
+    margin: auto;
+    background-color: rgb(31, 29, 29);
+    text-align: center;
+    /* width: 100%;       */
+  }
+}
